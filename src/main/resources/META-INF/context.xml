@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/myoracle"
+			  auth="Container"
+			  type="javax.sql.DataSource"
+			  driverClassName="oracle.jdbc.OracleDriver"
+			  url="jdbc:oracle:thin:@localhost:1521:xe"
+			  username="hr"
+			  password="zxcv1234"
+			  maxTotal="10" 
+			  maxIdle="5"
+			  maxWaitMillis="-1" />
+</Context>
+			  <!-- maxTotal 은 최대생성가능한 커넥션 -->
+			  <!-- maxWaitMillis 는 커넥션을 받기위해서 기다리는 시간 but 여기에 '-'부호를 넣는다면 받을때까지 기다린다. 오류가 안남 -->
